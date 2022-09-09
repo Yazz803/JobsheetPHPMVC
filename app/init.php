@@ -1,0 +1,11 @@
+<?php
+
+// header("Location: home");
+
+require_once 'core/App.php';
+require_once 'core/Controller.php';
+require_once 'core/Constant.php';
+
+$app = new App();
+
+
