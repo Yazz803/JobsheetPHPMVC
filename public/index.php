@@ -8,7 +8,5 @@ if($url === 'public'){
     header("Location: home");
 }
 
-PHP_EOL;
-
 require_once '../app/init.php';
 
