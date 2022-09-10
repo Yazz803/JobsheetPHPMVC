@@ -1,5 +1,8 @@
 <div class="container">
-    <h3 class="mb-3 text-capitalize">daftar buku <?= $data['nama'] ;?></h3>
+    <header class="d-flex justify-content-between mb-3" style="align-items: center;">
+        <h3 class="mb-3 text-capitalize">daftar buku <?= $data['nama'] ;?></h3>
+        <a href="tambah" class="btn btn-primary">Tambah Daftar Buku</a>
+    </header>
     <table class="table table-success table-striped table-bordered">
         <thead>
             <tr>
@@ -16,7 +19,7 @@
                     <th scope="col"><?= $no++;?></th>
                     <th><?= $buku['judul'] ;?></th>
                     <th><?= $buku['penulis'] ;?></th>
-                    <th><?= $buku['tanggalSelesai'] ;?></th>
+                    <th><?= $buku['tgl_selesai'] ;?></th>
                 </tr>
             <?php endforeach;?>
         </tbody>

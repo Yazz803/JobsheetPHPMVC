@@ -21,6 +21,9 @@ class Book_model {
 
     public function getBooks()
     {
-        return $this->book;
+        $conn = mysqli_connect("localhost", "root", "", "jobsheet_phpmvc");
+        $query = "SELECT * FROM books";
+        $result = mysqli_query($conn, $query);
+        return $result;
     }
 }
